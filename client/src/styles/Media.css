@@ -1,0 +1,51 @@
+/* Media Card Styling */
+.media-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  max-width: 350px;
+  margin: auto;
+}
+
+.media-card h2 {
+  font-size: 1.5rem;
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+/* Image Styling */
+.media-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Zoom and Glow Effect on Hover */
+.media-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 119, 182, 0.5);
+}
+
+.media-card img:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 15px rgba(0, 119, 182, 0.8);
+}
+
+/* Text Styling */
+.media-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .media-card {
+    max-width: 100%;
+    padding: 15px;
+  }
+}

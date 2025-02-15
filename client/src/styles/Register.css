@@ -1,0 +1,76 @@
+/* Register Page Styling for Hospital Theme */
+.register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .register-container h2 {
+    font-size: 2rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Group Styling */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0077b6;
+    margin-bottom: 5px;
+  }
+  
+  /* Input Fields */
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-group input:focus {
+    border-color: #0077b6;
+    outline: none;
+  }
+  
+  /* Register Button */
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: #005f8d;
+  }
+  
+  button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .register-container {
+      max-width: 90%;
+      padding: 15px;
+    }
+  }

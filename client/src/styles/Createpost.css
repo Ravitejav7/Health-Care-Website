@@ -1,0 +1,65 @@
+/* Center the form container */
+.create-post-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+.create-post-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Input fields */
+.create-post-container input,
+.create-post-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Textarea styling */
+.create-post-container textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Button styling */
+.create-post-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.create-post-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Error and success messages */
+.create-post-container .error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.create-post-container .success-message {
+  color: green;
+  text-align: center;
+  margin-bottom: 10px;
+}

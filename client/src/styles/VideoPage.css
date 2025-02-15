@@ -1,0 +1,58 @@
+/* Video Page Container */
+.video-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Video Title */
+.video-title {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+/* Video Player Styling */
+.video-player {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 119, 182, 0.5);
+  margin-bottom: 15px;
+}
+
+/* Like Button */
+.like-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #6c757d; /* Default grey color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.like-button.liked {
+  background-color: #0077b6; /* Blue when liked */
+}
+
+.like-button:hover {
+  background-color: #005f8d;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .video-player {
+    width: 100%;
+  }
+
+  .like-button {
+    width: 100%;
+  }
+}
