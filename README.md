@@ -3,5 +3,5 @@
 # Clinikk
 # Clinikk
 
-#Command to Run Frontend-part :: npm start
-#Command to Run Backend-Part :: npm run dev
+#Command to Run Frontend-part --Client folder :: npm start
+#Command to Run Backend-Part  :: npm run dev
