@@ -15,7 +15,9 @@ const VideoPage = () => {
       try {
         const response = await fetch(`${process.env.REACT_APP_API_URL}/media/${id}`, {
           method: "GET",
-          credentials: "include",
+          headers: {
+              Authorization: `Bearer ${localStorage.getItem("token")}`
+             },
         });
 
         if (!response.ok) throw new Error("Failed to fetch media");
@@ -39,7 +41,10 @@ const VideoPage = () => {
       const endpoint = liked ? "unlike" : "like";
       const response = await fetch(`${process.env.REACT_APP_API_URL}/media/${id}/${endpoint}`, {
         method: "PUT",
-        credentials: "include",
+        headers: {
+             "Content-Type": "application/json",
+             Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
       });
 
       if (!response.ok) throw new Error("Failed to update like status");
