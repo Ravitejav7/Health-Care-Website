@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Media from "./Media"; // Import the Media component
 import "../styles/Home.css"; // Import the CSS file
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [mediaData, setMediaData] = useState([]);
@@ -58,8 +59,8 @@ const Home = () => {
           <li>📄  Cashless Health Insurance Cover</li>
         </ul>
         <p>
-          To access personalized media content, **please log in**. 
-          <a href="/login" className="login-link">Click here to log in</a>.
+           To access personalized media content, <strong>please log in</strong>.{" "}
+           <Link to="/login" className="login-link">Click here to log in</Link>.
         </p>
       </div>
     );
