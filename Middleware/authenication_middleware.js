@@ -6,11 +6,16 @@ const SECRET_KEY = process.env.JWT_SECRET;
 
 function authenication_mid(req, res, next) {
   // Check if the token exists in cookies
-  const token = req.cookies?.token;
+  let token = req.cookies?.token;
+
+  // If not in cookies, check Authorization header
+  if (!token && req.headers.authorization?.startsWith("Bearer ")) {
+    token = req.headers.authorization.split(" ")[1];
+  }
 
   if (!token) {
     return res.status(401).json({
-      message: "No Token Found in Cookies",
+      message: "No Token Found in Cookies or Authorization header",
     });
   }
 
