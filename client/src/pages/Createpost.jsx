@@ -14,11 +14,13 @@ const CreatePost = () => {
     setSuccess(null);
 
     try {
+      const token = localStorage.getItem("token");
       const response = await fetch(`${process.env.REACT_APP_API_URL}/media`, {
         method: "POST",
         credentials: "include", // Ensures cookies are sent
         headers: {
           "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`, // Add Authorization header
         },
         body: JSON.stringify({ title, body, mediaUrl }),
       });
