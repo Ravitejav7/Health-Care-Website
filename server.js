@@ -12,7 +12,7 @@ const app = express();
 // ✅ Configure CORS Middleware
 app.use(
   cors({
-    origin:["https://health-care-website-frontend.onrender.com"], // Allow frontend requests
+    origin:[ "http://localhost:3000","https://health-care-website-frontend.onrender.com"], // Allow frontend requests
     credentials: true, // Allow cookies and authentication headers
     methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
     allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
