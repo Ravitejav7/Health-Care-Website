@@ -14,7 +14,7 @@ const CreatePost = () => {
     setSuccess(null);
 
     try {
-      const response = await fetch("http://localhost:8000/media", {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/media`, {
         method: "POST",
         credentials: "include", // Ensures cookies are sent
         headers: {

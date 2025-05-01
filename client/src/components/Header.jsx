@@ -24,7 +24,7 @@ const Header = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://localhost:8000/authenication/logout", {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/authenication/logout`, {
         method: "POST",
         credentials: "include", // Ensure cookies are included for auth
       });

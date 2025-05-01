@@ -13,7 +13,7 @@ const VideoPage = () => {
   useEffect(() => {
     const fetchMedia = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/media/${id}`, {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/media/${id}`, {
           method: "GET",
           credentials: "include",
         });
@@ -37,7 +37,7 @@ const VideoPage = () => {
   const handleLikeToggle = async () => {
     try {
       const endpoint = liked ? "unlike" : "like";
-      const response = await fetch(`http://localhost:8000/media/${id}/${endpoint}`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/media/${id}/${endpoint}`, {
         method: "PUT",
         credentials: "include",
       });

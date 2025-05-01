@@ -40,7 +40,7 @@ const Register = () => {
         try {
             console.log('Registering with:', { trimmedUsername, trimmedEmail, trimmedPassword });
 
-            const response = await fetch('http://localhost:8000/authenication/register', {
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/authenication/register`, {
                 method: 'POST',
                 body: JSON.stringify({ username: trimmedUsername, email: trimmedEmail, password: trimmedPassword }),
                 headers: { 'Content-Type': 'application/json' },
