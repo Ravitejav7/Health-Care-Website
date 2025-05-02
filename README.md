@@ -41,7 +41,7 @@ A full-stack healthcare media-sharing platform inspired by Clinikk, providing fe
 
 ### 📁 Project Structure (Frontend)
 
-```
+`client``
 src/
 │
 ├── components/
@@ -93,7 +93,6 @@ npm start
 #### Backend
 
 ```bash
-cd server
 npm install
 npm run dev
 ```
@@ -123,7 +122,6 @@ npm run dev
 ### 📍 Known Issues
 
 - Render free tier can take 20–30s to spin up backend after inactivity.
-- Manual logout clears localStorage but cookie may persist unless properly expired.
 
 ---
 
