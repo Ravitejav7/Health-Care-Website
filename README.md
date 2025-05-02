@@ -41,7 +41,7 @@ A full-stack healthcare media-sharing platform inspired by Clinikk, providing fe
 
 ### 📁 Project Structure (Frontend)
 
-`client``
+```
 src/
 │
 ├── components/
