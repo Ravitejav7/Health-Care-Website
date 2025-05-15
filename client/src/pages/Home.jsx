@@ -45,7 +45,7 @@ const Home = () => {
       <div className="welcome-container">
         <h1>Welcome to Clinikk</h1>
         <p>
-          Clinikk is a Bangalore-based healthcare startup that provides 
+          Clinikk is a Heathcare website that provides 
          affordable and accessible healthcare solutions. We offer 24/7 
           doctor consultations, health insurance, and in-clinic services** 
           to ensure comprehensive care for individuals and families.
